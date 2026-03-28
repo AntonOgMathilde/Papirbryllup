@@ -203,8 +203,8 @@
     .rsvp-btn.primary, .rsvp-btn:hover { background: var(--cream); color: var(--red); }
     .rsvp-deadline { margin-top: 20px !important; font-style: italic; font-size: 0.9rem; opacity: 0.7; }
 
-    /* ─── CONTACT ─── */
-    .contact-row { display: flex; gap: 36px; flex-wrap: wrap; margin-top: 28px; }
+    /* ─── CONTACT ─── *//* ─── CONTACT ─── */
+    .contact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 28px; }
     .contact-item { display: flex; flex-direction: column; gap: 4px; }
     .contact-label { font-size: 0.73rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); }
     .contact-value { font-family: 'DM Serif Display', serif; font-size: 1.05rem; }
@@ -490,7 +490,6 @@
   <p class="rsvp-deadline fade-in" data-i18n="rsvp_deadline"></p>
 </div>
 
-<!-- CONTACT -->
 <section id="kontakt">
   <span class="section-label" data-i18n="contact_label"></span>
   <h2 class="fade-in" data-i18n="contact_heading"></h2>
@@ -516,7 +515,7 @@
     </div>
   </div>
 </section>
-
+  
 <!-- FOOTER -->
 <footer>
   <img src="mathilde_anton.png" alt="mathilde + anton · 2026" class="footer-img" />
